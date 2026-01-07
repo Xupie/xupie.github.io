@@ -30,7 +30,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
           </a>
         )}
       </div>
-      <div className="relative w-full md:w-3/5 aspect-video px-4 rounded-xl border border-(--color-surface-dark) bg-surface shadow-md hover:shadow-lg hover:border-primary transition-all duration-300 ease-out">
+      <div className="relative w-full md:w-3/5 p-1 aspect-video rounded-xl border border-(--color-surface-dark) bg-surface shadow-md hover:shadow-lg hover:border-primary transition-all duration-300 ease-out">
         {Array.isArray(img_src) ? (
           <Carousel>
             {img_src.map((src, _index) => (
@@ -39,7 +39,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                   src={src}
                   alt={img_alt}
                   fill={true}
-                  className="object-cover rounded-xl"
+                  className="rounded-xl"
                   loading={"lazy"}
                 />
               </div>
