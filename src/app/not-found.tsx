@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "404 - Page not found",
@@ -6,9 +6,9 @@ export const metadata: Metadata = {
 };
 
 export default function GlobalNotFound() {
-    return (
-        <div>
-            <h1>404 - Page not found</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1>404 - Page not found</h1>
+    </div>
+  );
 }

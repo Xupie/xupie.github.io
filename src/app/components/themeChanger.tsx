@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { useTheme } from 'next-themes'
-import { useState, useEffect } from 'react'
+import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
 
 // https://www.npmjs.com/package/next-themes#avoid-hydration-mismatch
 export default function ThemeSwitch() {
@@ -10,12 +10,12 @@ export default function ThemeSwitch() {
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
-    setMounted(true)
+    setMounted(true);
   }, []);
 
   if (!mounted) {
-    return null
-  };
+    return null;
+  }
 
   return (
     <label className="inline-flex items-center cursor-pointer">
@@ -25,9 +25,7 @@ export default function ThemeSwitch() {
         checked={theme === "dark"}
         onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
       />
-      <span
-      className="theme-switch peer peer-checked:after:translate-x-full"
-      ></span>
+      <span className="theme-switch peer peer-checked:after:translate-x-full"></span>
     </label>
-  )
+  );
 }

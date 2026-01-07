@@ -21,7 +21,7 @@ export function LogoGithub() {
         width={36}
         height={36}
         className={"hover"}
-        unoptimized={true} 
+        unoptimized={true}
       />
     </a>
   );
@@ -34,7 +34,8 @@ export function HamburgerMenu() {
       src={
         resolvedTheme === "dark"
           ? `/hamburger-menu/hamburger-menu-white.svg`
-          : `/hamburger-menu/hamburger-menu.svg`}
+          : `/hamburger-menu/hamburger-menu.svg`
+      }
       alt={"icon of mobile navigation menu"}
       width={36}
       height={36}
