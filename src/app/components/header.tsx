@@ -1,8 +1,7 @@
 "use client";
 import Link from "next/link";
-import { HamburgerMenu, LogoGithub } from "./logo";
-import ThemeSwitch from "./themeChanger";
 import { useState } from "react";
+import { HamburgerMenu, LogoGithub } from "./logo";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
